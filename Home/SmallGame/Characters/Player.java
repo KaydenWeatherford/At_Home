@@ -1,17 +1,22 @@
-public class Player implements Character{
+package Characters;
+
+public class Player implements Characters{
     private String Name;
-    private double Health;
+    private double HP;
     private String Type;
+    private int XP;
 
     public Player(String CharName){
         Name = CharName;
-        Health = 10.0;
+        HP = 10.0;
         Type = "Human";
+        XP = 0;
     }
     public Player(String CharName, String InType){
         Name = CharName;
-        Health = 10.0;
+        HP = 10.0;
         Type = InType;
+        XP = 0;
     }
 
     public String getName(){
@@ -23,10 +28,19 @@ public class Player implements Character{
     }
 
     public double getHealth(){
-        return Health;
+        return HP;
     }
 
     public void setHealth(double value){
-        Health = value;
+        HP = value;
     }
+
+    public int getXP(){
+        return XP;
+    }
+
+    public void setXP(int value){
+        XP = value;
+    }
+
 }
