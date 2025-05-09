@@ -1,8 +1,0 @@
-Fist
-This one is Lefty, the other one is Righty. They're my friends!
-Melee 1 1
-
-Stick
-A classic piece of forrest floor utensils.
-Melee 2 1
-
