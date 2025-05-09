@@ -6,5 +6,7 @@ public class PlaySudoku{
         Sudoku s = new Sudoku();
         s.generateBoard(3);  // 3 = Hard
         s.displayBoard();
+        
+
     }
 }
