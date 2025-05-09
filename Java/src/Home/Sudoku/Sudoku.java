@@ -1,3 +1,5 @@
+package Home.Sudoku;
+
 import java.util.Random;
 
 public class Sudoku {
@@ -159,7 +161,7 @@ public class Sudoku {
         }
     }
 
-    // in case
+    // in case I need it
     public static int[][] getBoard() {
         return board;
     }
