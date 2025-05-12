@@ -70,7 +70,7 @@ public class Sudoku {
         fillBoard(newBoard);
         hiddenBoard = newBoard;
         // Number of cells to remove based on difficulty
-        int cellsToRemove = >switch (difficulty) {
+        int cellsToRemove = switch (difficulty) {
             case 1 -> 35; // Easy
             case 2 -> 45; // Medium
             case 3 -> 55; // Hard

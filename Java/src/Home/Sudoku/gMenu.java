@@ -16,11 +16,7 @@ public class gMenu{
     }
     
     public void disOptions(){
-
-        for (int i = 1; i < options.size(); i++){
-            System.out.println(options.get(i) + ") - " + findKey(options.get(i)));
-        }
-        System.out.println("\n" + options.get(0) + ") - " + findKey(options.get(0)));
+        
     }
     
 }

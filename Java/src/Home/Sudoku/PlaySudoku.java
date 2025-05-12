@@ -32,7 +32,9 @@ public class PlaySudoku{
                                     \nwith no repeated numbers in each line, horizontally or vertically.
                                     \nTo challenge you more, there are 3×3 squares marked out in the grid,
                                     \nand each of these squares can\'t have any repeat numbers either.\n");
+                ans = "";
             }
+            
 
 
 
