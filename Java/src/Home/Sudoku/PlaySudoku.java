@@ -28,10 +28,10 @@ public class PlaySudoku{
                 ans = "";
             }
             else if (ans.equals("info")){
-                System.out.println("\nA 9×9 square must be filled in with numbers from 1-9
-                                    \nwith no repeated numbers in each line, horizontally or vertically.
-                                    \nTo challenge you more, there are 3×3 squares marked out in the grid,
-                                    \nand each of these squares can\'t have any repeat numbers either.\n");
+                System.out.println("\nA 9×9 square must be filled in with numbers from 1-9" +
+                                    "\nwith no repeated numbers in each line, horizontally or vertically." +
+                                    "\nTo challenge you more, there are 3×3 squares marked out in the grid," +
+                                    "\nand each of these squares cant have any repeat numbers either.\n");
                 ans = "";
             }
             
