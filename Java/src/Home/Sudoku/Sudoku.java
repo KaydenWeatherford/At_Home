@@ -166,4 +166,15 @@ public class Sudoku {
     public static int[][] getBoard() {
         return board;
     }
+
+    public void setNum(int r,int c,int num){
+        if (board[r][c] == 0 && board.isValidPlacement() == true)
+            board[r][c] = num;
+        else if (board.isValidPlacement() == false){
+            System.out.println("\nWrong Answer");
+        }
+        else {
+            System.out.println("\nNot an Empty Space");
+        }
+    }
 }
