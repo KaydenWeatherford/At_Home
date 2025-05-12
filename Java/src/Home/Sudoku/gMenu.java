@@ -1,18 +1,18 @@
 package Home.Sudoku;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Hashtable;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
 public class gMenu{
     
-    private LinkedHashMap<Integer, String> options;
+    private Object[] options = {"new", "info", "help", "quit",};
+    private int[] choices;
     
-    public gMenu(String[] args){
-        for (int i = 1; i <= args.length; i++){
-            options.put(i, args[i-1]);
-        }
-        options.put(0, "Exit");
+    public gMenu(){
+        
     }
     
     public void disOptions(){
@@ -22,17 +22,5 @@ public class gMenu{
         }
         System.out.println("\n" + options.get(0) + ") - " + findKey(options.get(0)));
     }
-
-    private int findKey(String targetValue){
-        int key = -1;
-        for (Map.Entry<Integer, String> x : options.entrySet()) {
-            if (x.getValue().equals(targetValue)) {
-                key = x.getKey();
-                break;
-            }
-        }
-        return key;
-    }
-
     
 }

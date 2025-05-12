@@ -4,6 +4,7 @@ import java.util.Random;
 
 public class Sudoku {
     private static int[][] board = new int[9][9];
+    private static int[][] hiddenBoard = new int[9][9];
 
     public Sudoku() {
         // generates a random board
@@ -60,16 +61,16 @@ public class Sudoku {
             }
         }
 
+        
         return true;
     }
 
-    // placeholder board
     public int[][] generateBoard(int difficulty) {
         int[][] newBoard = new int[9][9];
         fillBoard(newBoard);
-
+        hiddenBoard = newBoard;
         // Number of cells to remove based on difficulty
-        int cellsToRemove = switch (difficulty) {
+        int cellsToRemove = >switch (difficulty) {
             case 1 -> 35; // Easy
             case 2 -> 45; // Medium
             case 3 -> 55; // Hard
@@ -107,7 +108,7 @@ public class Sudoku {
                             board[row][col] = 0;
                         }
                     }
-                    return false; // Backtrack
+                    return false; // goback
                 }
             }
         }
