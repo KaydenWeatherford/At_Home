@@ -1,4 +1,4 @@
-package Home.Sudoku;
+package com.kiki.Home.Sudoku;
 
 import java.util.Random;
 
@@ -61,7 +61,7 @@ public class Sudoku {
             }
         }
 
-        
+
         return true;
     }
 
@@ -70,18 +70,19 @@ public class Sudoku {
         fillBoard(newBoard);
         hiddenBoard = newBoard;
         // Number of cells to remove based on difficulty
-        int cellsToRemove = switch (difficulty) {
+        /* int cellsToRemove = switch (difficulty) {
             case 1 -> 35; // Easy
             case 2 -> 45; // Medium
             case 3 -> 55; // Hard
-            default -> 45; // Default to medium if out of range
-        }; // thanks gpt
+            default -> 45; // Default to medium if out of range */
 
+
+        // thanks gpt
+        int cellsToRemove = 45;
         removeCells(newBoard, cellsToRemove);
         board = newBoard;
-        return newBoard;
+        return board;
     }
-
 
     private void removeCells(int[][] board, int cellsToRemove) {
         Random rand = new Random();
@@ -167,13 +168,12 @@ public class Sudoku {
         return board;
     }
 
-    public void setNum(int r,int c,int num){
-        if (board[r][c] == 0 && board.isValidPlacement() == true)
+    public void setNum(int r, int c, int num) {
+        if (board[r][c] == 0 && isValidPlacement(board, r, c, num))
             board[r][c] = num;
-        else if (board.isValidPlacement() == false){
+        else if (!isValidPlacement(board, r, c, num)) {
             System.out.println("\nWrong Answer");
-        }
-        else {
+        } else {
             System.out.println("\nNot an Empty Space");
         }
     }

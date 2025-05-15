@@ -1,9 +1,11 @@
+package com.kiki.ChatGPT;
+
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class ChatGPT{
-
+    // TODO get money to use this stuff
    public static String chatGPT(String prompt) {
        String url = "https://api.openai.com/v1/chat/completions";
        String apiKey = "YOUR API KEY HERE";

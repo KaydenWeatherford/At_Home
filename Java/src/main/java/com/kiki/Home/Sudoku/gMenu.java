@@ -1,10 +1,4 @@
-package Home.Sudoku;
-
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Hashtable;
-import java.util.LinkedHashMap;
-import java.util.Map;
+package com.kiki.Home.Sudoku;
 
 public class gMenu{
     
